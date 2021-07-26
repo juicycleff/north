@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "north-event-store",
+    "north-loadbalancer",
+    "north-common",
+    "north-service",
+    "north",
+    "north-core",
+    "north-cqrs",
+    "examples/basic",
+]

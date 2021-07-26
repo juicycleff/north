@@ -1,0 +1,14 @@
+[package]
+name = "north-core"
+version = "0.1.0"
+authors = ["Rex Isaac Raphael <rex.raphael@outlook.com>"]
+edition = "2018"
+
+[features]
+default = []
+tls = ["rustls", "hyper-rustls"]
+
+[dependencies]
+rustls = { version = "0.19", optional = true }
+hyper-rustls = { version = "0.22.1", optional = true }
+hyper = { version = "0.14", default-features = false }

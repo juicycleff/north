@@ -1,0 +1,8 @@
+/target
+
+._.DS_Store
+*._.DS_Store
+*._target
+
+.vscode
+.idea
