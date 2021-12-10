@@ -11,7 +11,7 @@ impl ServiceTrait for Service {
     type Output = Service;
 
     fn handler(mut self) -> Self::Output {
-        todo!()
+        todo!("Implement handler method")
     }
 
     fn version(mut self, version: &str) -> Self::Output {
@@ -50,7 +50,7 @@ impl ServiceTrait for Service {
     }
 
     fn wrapper(mut self) -> Self::Output {
-        todo!()
+        todo!("Implement wrapper method");
     }
 
     fn graceful_shutdown(mut self) -> Self::Output {
@@ -59,6 +59,6 @@ impl ServiceTrait for Service {
     }
 
     fn middleware(mut self) -> Self::Output {
-        todo!()
+        todo!("Implement middleware method")
     }
 }
