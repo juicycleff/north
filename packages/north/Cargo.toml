@@ -1,0 +1,19 @@
+[package]
+name = "north"
+version = "0.1.0"
+authors = ["Rex Isaac Raphael <rex.raphael@outlook.com>"]
+edition = "2018"
+
+[features]
+default = []
+tls = ["north-core/tls"]
+
+[dependencies]
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1.12", features = ["full"] }
+futures = "0.3.17"
+yansi = "0.5.0"
+log = "0.4.14"
+
+north-common = { path = "../../packages/common" }
+north-core = { path = "../../packages/core" }
