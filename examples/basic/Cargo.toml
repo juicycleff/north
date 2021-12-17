@@ -8,6 +8,6 @@ edition = "2018"
 
 [dependencies]
 north = { path = "../../packages/north" }
-tokio = { version = "1.5", features = ["full"] }
+tokio = { version = "1.14", features = ["full"] }
 
 log = "0.4.14"
