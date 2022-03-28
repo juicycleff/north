@@ -34,7 +34,7 @@ impl North {
         let full_addr = format!(
             "{}:{}",
             self.service.options.address.clone().unwrap(),
-            self.service.options.port.clone().unwrap()
+            self.service.options.port.unwrap()
         );
 
         serve!(self, full_addr, async |builder, protocol| {
