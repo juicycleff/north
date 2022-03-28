@@ -44,6 +44,7 @@ impl ServiceTrait for Service {
         self
     }
 
+    /// Port service runs on
     fn port(mut self, port: u16) -> Self::Output {
         self.options.port = Some(port);
         self
